@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/vars.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="progress-line"></div>
+        <header class="header">
+            <div class="container">
+                <section class="header__section">
+                    <nav class="header-nav header-nav__hidden">
+                        <ul class="nav__list">
+                            <li><a href="#" class="header-link info-link" data-link="link-1">Информация</a></li>
+                            <li><a class="header-link" href="#" data-link="link-2">Новости</a></li>
+                            <li><a class="header-link" href="price.html">Прайс-лист</a></li>
+                            <li><a href="store.html" class="header-link">Магазин</a></li>
+                            <li><a class="header-link" href="#" data-link="link-1">Контакты</a></li>
+                        </ul>
+                        <div class="log-in">
+                            <img src="img/login.svg" alt="log in">
+                            <p><a href="#">Вход</a></p>
+                        </div>
+                    </nav>
+                    <div class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="main-description__section">
+                <article>
+                    <div class="container">
+                        <div class="images-container">
+                            <div><img src="img/Vector.svg" alt="logo"></div>
+                            <div><img src="img/Vector (1).svg" alt="logo"></div>
+                            <div><img src="img/Vector (2).svg" alt="logo"></div>
+                        </div>
+                        <div class="text-container">
+                            <div class="text-container__info">
+                                <h3>Быстро</h3>
+                                <div class="text-container__square"></div>
+                                <p>Мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+                            </div>
+                            <div class="text-container__info">
+                                <h3>Круто</h3>
+                                <div class="text-container__square""></div>
+                                <p>забудьте, как вы стриглись раньше. мы сделаем из вас звезду футбола или кино! во всяком случае внешне.</p>
+                            </div>
+                            <div class="text-container__info">
+                                <h3>Дорого</h3>
+                                <div class="text-container__square""></div>
+                                <p>наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определенный статус?</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="container our-news__container" id="link-2">
+                <article class="our-news__article">
+                    <div class="our-news__text">
+                        <h2>Новости</h2>
+                        <h5>Нам наконец завезли ягермаистер! теперь вы можете пропустить стаканчик во время стрижки</h5>
+                        <p>11 января</p>
+                        <h5>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград, пополнил наши стройные ряды</h5>
+                        <p>18 января</p>
+                        <a href="#"><p>Все новости</p></a>
+                    </div>
+                    <div class="shape">
+                        <img src="img/shape.svg" alt="shape">
+                    </div>
+                    <div class="our-gallery__section">
+                        <div class="our-gallery">
+                            <h2>Фотогалерея</h2>
+                        </div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide__project" title="Барбершоп">
+                                    <img src="img/barbershop-1.jpg" alt="Барбершоп"/>
+                                </div>
+                                <div class="swiper-slide swiper-slide__project" title="Барбершоп">
+                                    <img src="img/barbershop-2.jpg" alt="Барбершоп"/>
+                                </div>
+                                <div class="swiper-slide swiper-slide__project" title="Барбершоп">
+                                    <img src="img/barbershop-3.jpg" alt="Барбершоп"/>
+                                </div>
+                                <div class="swiper-slide swiper-slide__project" title="Барбершоп">
+                                    <img src="img/barbershop-4.jpg" alt="Барбершоп"/>
+                                </div>
+                                </div>
+                                <div class="swiper-button-prev">Назад</div>
+                                <div class="swiper-button-next">Вперед</div>
+                            </div>
+                        </div>
+                </article>
+            </section>
+            <div class="my-projects__section">
+                <article class="my-projects__article">
+                    <h1>Фотогалерея</h1>
+                    <img class="project-img" width="1100" src="" alt="Барбешоп">
+                    <p class="cross-icon__close">&#10006;</p>
+                </article>
+            </div>
+            <div class="btn-up btn-up__hide"></div>
+            <section class="container contacts__section" id="link-1">
+                <article class="contacts__article">
+                    <div class="contact-wrapper__container">
+                        <div class="contact-part1">
+                            <h2>Контактная информация</h2>
+                            <div class="contacts__address">
+                                <p>Барбершоп «бородинский»</p>
+                                <p>Адрес: г. санкт-петербург, б. конюшенная, д. 19/8</p>
+                                <p>Телефон: +7 (812) 666-02-66</p>
+                            </div>
+                            <div class="contacts__time-work">
+                                <h4>Время работы</h4>
+                                <p>ПН-ПТ: С 10:00 ДО 22:00</p>
+                                <p>СБ-ВС: С 10:00 ДО 19:00</p>
+                            </div>
+                            <div class="contacts-btn__container">
+                                <button class="contacts-btn"><a href="#">Как проехать</a></button>
+                                <button class="contacts-btn"><a href="#">Обратная связь</a></button>
+                            </div>
+                        </div>
+                        <div class="shape">
+                            <img src="img/shape.svg" alt="shape">
+                        </div>
+                        <div class="contact-part3">
+                            <h2>Записаться</h2>
+                            <h5>Укажите, пожалуйста, желаемую дату и время, и мы свяжемся с вами для подтверждения брони.</h5>
+                            <form action="">
+                                <div class="sign-up__wrapper data">
+                                    <label for="">Дата</label>
+                                    <input type="date" placeholder="08.10.2017" required>
+                                </div>
+                                <div class="sign-up__wrapper time">
+                                    <label for="">Время</label>
+                                    <input type="time" placeholder="10:00" required>
+                                </div>
+                                <div class="sign-up__wrapper name">
+                                    <label for="">Ваше имя</label>
+                                    <input type="text" placeholder="Роман Дев" required>
+                                </div>
+                                <div class="sign-up__wrapper telephon">
+                                    <label for="">Телефон</label>
+                                    <input type="tel" placeholder="+7 123 456-78-90" required>
+                                </div>
+                                <input class="contacts__send-btn" type="submit" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <section class="container">
+                <article class="footer__article">
+                    <ul class="first-list">
+                        <li>Барбершоп «бородинский»</li>
+                        <li>Адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8</li>
+                        <li>Как нас найти?</li>
+                        <li>Телефон: +7 (812) 666-02-66</li>
+                    </ul>
+                    <ul class="second-list">
+                        <li>Давайте дружить!</li>
+                        <li>
+                            <a href="#"><img src="img/vk.svg" alt="Vk"></a>
+                            <a href="#"><img src="img/Facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="img/Instagram.svg" alt="Instagram"></a>
+                        </li>
+                    </ul>
+                    <ul class="third-list">
+                        <li>Разработано</li>
+                        <li>Html Academy</li>
+                    </ul>
+                </article>
+            </section>
+        </footer>
+    </div>
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

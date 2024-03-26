@@ -1,0 +1,13 @@
+<svg width="2.000000" height="278.000000" viewBox="0 0 2 278" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient id="paint_linear_1_544_0" x1="1.000000" y1="0.000033" x2="1.000000" y2="277.999695" gradientUnits="userSpaceOnUse">
+			<stop offset="0.062500" stop-color="#C5C2C0" stop-opacity="0.000000"/>
+			<stop offset="0.541667" stop-color="#C5C2C0"/>
+			<stop offset="0.937500" stop-color="#C5C2C0" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<path id="shape" d="M0 194.021L0 83.9791L2 0L2 278L0 194.021Z" fill="url(#paint_linear_1_544_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>

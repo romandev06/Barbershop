@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    color: white;
+}
+
+.swiper-wrapper img {
+    color: black;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+
+    @media (max-width: 980px) {
+        width: 550px;
+    }
+
+    @media (max-width: 580px) {
+        width: 350px;
+    }
+}
+
+.container-price  {
+    width: 940px;
+    margin: 0 auto;
+
+    @media (max-width: 980px) {
+        width: 550px;
+    }
+
+    @media (max-width: 580px) {
+        width: 350px;
+    }
+}
+
+.progress-line {
+    background-color: red;
+    height: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+
+@import 'structure/header';
+@import 'structure/main';
+@import 'structure/footer';
+@import 'vars';
