@@ -1446,6 +1446,7 @@ header {
 @media (max-width: 710px) {
   .main-container {
     width: 260px;
+    margin: 0 auto;
   }
 }
 
