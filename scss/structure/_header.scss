@@ -18,7 +18,7 @@ header {
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 999;
+        z-index: 999999;
         background-image: radial-gradient(rgb(36, 33, 33), black);
         animation: burgerMenu  0.2s linear;
     }
@@ -120,7 +120,7 @@ header {
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 999;
+    z-index: 999999;
 }
 
 .burger-icon span{

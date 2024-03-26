@@ -144,7 +144,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 999;
+    z-index: 999999;
     background-image: radial-gradient(rgb(36, 33, 33), black);
     -webkit-animation: burgerMenu 0.2s linear;
             animation: burgerMenu 0.2s linear;
@@ -264,7 +264,7 @@ header {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 999;
+  z-index: 999999;
 }
 
 .burger-icon span {
@@ -1271,9 +1271,16 @@ header {
 }
 
 .store-card {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   background-color: white;
+}
+.store-card:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media (max-width: 760px) {
   .store-card {
@@ -1606,7 +1613,7 @@ input[type=radio].third-radio__input {
           justify-content: center;
   width: 40px;
   height: 40px;
-  z-index: 99999;
+  z-index: 999;
 }
 
 .btn-up::before {
