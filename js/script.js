@@ -156,3 +156,74 @@ window.addEventListener('scroll', () => {
     })
 })
 
+
+
+
+
+
+// Валидация формы
+
+function deleteError(input) {
+    const deleteValue = document.querySelectorAll('.input-box')
+    deleteValue.forEach(delValue => {
+        delValue.classList.remove('error')
+    })
+}
+
+function deleteCorrect(input) {
+    const deleteValue = document.querySelectorAll('.input-box')
+    deleteValue.forEach(delValue => {
+        delValue.classList.remove('correct')
+    })
+}
+
+
+function validation() {
+
+    function createError(input) {
+        const parent = input.parentNode
+        parent.classList.add('error')
+    }
+
+    function createCorrect(input) {
+        const parent = input.parentNode
+        parent.classList.add('correct')
+    }
+
+
+
+    let result = true
+
+    const allInputs = document.querySelectorAll('.main-input')
+    allInputs.forEach(input => {
+        if (input.value === '') {
+            createError(input)
+
+            result = false
+        } else if (input.value.length >= 1) {
+            createCorrect(input)
+        }
+    })
+
+    return result
+}
+
+const form = document.getElementById('sign-form')
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    if (validation(this) === true) {
+        setTimeout(() => {
+            alert ('Форма была успешно отправлена')
+        }, 300);
+
+        const allInputs = document.querySelectorAll('.main-input')
+        allInputs.forEach(input => {
+            input.value = ''
+        })
+
+        deleteCorrect()
+        deleteError()
+    }
+})
