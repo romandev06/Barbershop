@@ -227,3 +227,21 @@ form.addEventListener('submit', (event) => {
         deleteError()
     }
 })
+
+
+
+
+// Текущая время и дата
+
+const date = document.getElementById('date')
+const time = document.getElementById('time')
+
+
+currentDate()
+setInterval(currentDate, 1000)
+
+
+function currentDate() {
+    date.value = new Date().toLocaleDateString()
+    time.value = new Date().toLocaleTimeString()
+}
