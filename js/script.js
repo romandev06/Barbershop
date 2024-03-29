@@ -215,7 +215,7 @@ form.addEventListener('submit', (event) => {
 
     if (validation(this) === true) {
         setTimeout(() => {
-            alert ('Форма была успешно отправлена')
+            alert ('Ваша запись была успешно создана!')
         }, 300);
 
         const allInputs = document.querySelectorAll('.main-input')
