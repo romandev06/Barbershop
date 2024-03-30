@@ -11,6 +11,9 @@ const swiper = new Swiper(".mySwiper", {
 
 
 
+
+
+
 // Модальное окно (галерея изображений)
 
 const myProjects = document.querySelectorAll('.swiper-slide__project img')
@@ -23,8 +26,16 @@ myProjects.forEach(project => project.addEventListener('click', function() {
     myProjectsGallery.style.display = 'flex'
 
     myProjectImg.src = project.getAttribute('src')
-}))
 
+    if (myProjectsGallery.style.display === 'flex') {
+        btnUp.classList.remove('btn-up')
+    }
+
+
+    // запрет скролла при открытии Галереи изображений
+
+    document.body.classList.toggle('overflow-y')
+}))
 
 
 
@@ -33,20 +44,43 @@ myProjects.forEach(project => project.addEventListener('click', function() {
 
 closeMyProjects.addEventListener('click', function() {
     myProjectsGallery.style.display = 'none'
+
+    if (myProjectsGallery.style.display === 'none') {
+        btnUp.classList.add('btn-up')
+    }
+
+    document.body.classList.toggle('overflow-y')
 })
 
-window.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        myProjectsGallery.style.display = 'none'
-    }
-})
+
+function scrollBan() {
+    window.addEventListener('keydown', (event) => {
+        if (myProjectsGallery.style.display === 'flex' && event.key === 'Escape') {
+            myProjectsGallery.style.display = 'none'
+
+            btnUp.classList.add('btn-up')
+
+            document.body.classList.toggle('overflow-y')
+        }
+    })
+}
+
+scrollBan()
 
 
 window.addEventListener('click', (event) => {
     if (event.target === myProjectsGallery) {
         myProjectsGallery.style.display = 'none'
+
+        btnUp.classList.add('btn-up')
+
+        document.body.classList.toggle('overflow-y')
     }
 })
+
+
+
+
 
 
 
@@ -70,15 +104,21 @@ const headerLinks = document.querySelectorAll('.header-link')
 
 burgerIcon.addEventListener('click', function() {
     headerNav.classList.toggle('header-nav__hidden')
+
+
+
+    // запрет скролла при открытом бургер меню
+
+    document.body.classList.toggle('overflow-y')
 })
 
 headerLinks.forEach(headerLink => headerLink.addEventListener('click', () => {
     headerNav.classList.toggle('header-nav__hidden')
 
     icons.classList.remove('open')
+
+    document.body.classList.toggle('overflow-y')
 }))
-
-
 
 
 
@@ -88,11 +128,16 @@ headerLinks.forEach(headerLink => headerLink.addEventListener('click', () => {
 window.addEventListener('keydown', (event) => {
     if (!headerNav.classList.contains('header-nav__hidden') && (event.target === headerNav ||  event.key === 'Escape')) {
         headerNav.classList.add('header-nav__hidden')
-        icons.forEach(icon => {
-            icon.classList.toggle('open')
-        })
+        icons.classList.toggle('open')
+
+
+
+    // запрет скролла при открытом бургер меню
+
+    document.body.classList.toggle('overflow-y')
     }
 })
+
 
 
 
@@ -116,6 +161,8 @@ window.addEventListener('keydown', (event) => {
 
 
 
+
+
 // плавный скролл к элементам (якоря)
 
 headerLinks.forEach(link => link.addEventListener('click', () => {
@@ -126,6 +173,8 @@ headerLinks.forEach(link => link.addEventListener('click', () => {
         behavior: "smooth"
     })
 }))
+
+
 
 
 
@@ -155,6 +204,8 @@ window.addEventListener('scroll', () => {
         })
     })
 })
+
+
 
 
 

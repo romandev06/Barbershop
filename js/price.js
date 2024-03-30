@@ -30,9 +30,7 @@ headerLinks.forEach(headerLink => headerLink.addEventListener('click', () => {
 window.addEventListener('keydown', (event) => {
     if (!headerNav.classList.contains('header-nav__hidden') && (event.target === headerNav ||  event.key === 'Escape')) {
         headerNav.classList.add('header-nav__hidden')
-        icons.forEach(icon => {
-            icon.classList.toggle('open')
-        })
+        icons.classList.toggle('open')
     }
 })
 
