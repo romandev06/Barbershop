@@ -120,7 +120,11 @@ burgerIcon.addEventListener('click', function() {
 
     // запрет скролла при открытом бургер меню
 
-    document.body.classList.toggle('overflow-y')
+    document.body.classList.add('overflow-y')
+
+    headerLinks.forEach(link => link.addEventListener('click', () => {
+        document.body.classList.remove('overflow-y')
+    }))
 })
 
 headerLinks.forEach(headerLink => headerLink.addEventListener('click', () => {
@@ -128,7 +132,7 @@ headerLinks.forEach(headerLink => headerLink.addEventListener('click', () => {
 
     icons.classList.remove('open')
 
-    document.body.classList.toggle('overflow-y')
+    // document.body.classList.add('overflow-y')
 }))
 
 
