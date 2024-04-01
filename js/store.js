@@ -14,6 +14,11 @@ const headerLinks = document.querySelectorAll('.header-link')
 
 burgerIcon.addEventListener('click', function() {
     headerNav.classList.toggle('header-nav__hidden')
+
+
+    // запрет скролла при открытом бургер меню
+
+    document.body.classList.toggle('overflow-y')
 })
 
 headerLinks.forEach(headerLink => headerLink.addEventListener('click', () => {
@@ -39,19 +44,31 @@ window.addEventListener('keydown', (event) => {
 
 
 
+// loader
+
+const mask = document.querySelector('.mask')
+
+window.addEventListener('load', () => {
+    mask.classList.add('hide')
+
+    setTimeout(() => {
+        mask.remove()
+    }, 600);
+})
+
 
 
 
 // progress line
 
-// let wrapper = document.querySelector('.wrapper')
-// let progressLine = document.querySelector('.progress-line')
+let wrapper = document.querySelector('.wrapper')
+let progressLine = document.querySelector('.progress-line')
 
-// window.addEventListener('scroll', function() {
-//     let progressBar = window.scrollY / (wrapper.clientHeight - window.innerHeight) * 100
+window.addEventListener('scroll', function() {
+    let progressBar = window.scrollY / (wrapper.clientHeight - window.innerHeight) * 100
 
-//     progressLine.style.width = progressBar + '%'
-// })
+    progressLine.style.width = progressBar + '%'
+})
 
 
 
