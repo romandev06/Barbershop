@@ -106,8 +106,8 @@ img {
   position: fixed;
   top: 0;
   z-index: 99999999;
-  -webkit-transition: 0.6s linear;
-  transition: 0.6s linear;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
