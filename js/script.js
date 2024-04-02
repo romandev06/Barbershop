@@ -120,7 +120,7 @@ burgerIcon.addEventListener('click', function() {
 
     // запрет скролла при открытом бургер меню
 
-    document.body.classList.add('overflow-y')
+    document.body.classList.toggle('overflow-y')
 
     headerLinks.forEach(link => link.addEventListener('click', () => {
         document.body.classList.remove('overflow-y')
