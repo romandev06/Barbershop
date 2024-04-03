@@ -43,8 +43,12 @@ window.addEventListener('keydown', (event) => {
         headerNav.classList.add('header-nav__hidden')
         icons.classList.toggle('open')
     }
-})
 
+
+    // запрет скролла при открытом бургер меню
+
+    document.body.classList.toggle('overflow-y')
+})
 
 
 
